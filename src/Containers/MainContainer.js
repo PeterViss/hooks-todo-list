@@ -1,9 +1,14 @@
 import React, { useState } from 'react'
 
 const MainContainer = () => {
+  const [inputText, setText] = useState()
+
   return (
     <>
-      <input></input>
+      <div>To Do List</div>
+      <form>
+        <input value={inputText} />
+      </form>
     </>
   )
 }
